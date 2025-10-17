@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia e Innovación al Cuadrado</title>
+    <!-- Carga de Tailwind CSS para un diseño limpio y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración de la fuente y paleta de colores (Modo Claro/Light Mode) -->
+    <style>
+        /* La fuente 'Inter' es usada como sustituto profesional de 'Universe' */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF; /* Fondo Blanco para alto contraste y seriedad */
+            color: #1F2937; /* Texto muy oscuro */
+        }
+        /* Paleta Oficial I²: Color de Énfasis (Azul Eléctrico) */
+        .text-i2-blue {
+            color: #3B82F6; 
+        }
+        /* Color principal para CTAs y elementos clave */
+        .bg-i2-blue {
+            background-color: #3B82F6; 
+        }
+        .bg-i2-blue:hover {
+            background-color: #2563EB; /* Un tono más oscuro de azul para hover */
+        }
+        /* Ajuste para el Data-Grid en modo claro (sutil) */
+        .data-grid-bg {
+             background-image: repeating-linear-gradient(0deg, #E5E7EB 0.5px, transparent 0.5px, transparent 19.5px), repeating-linear-gradient(90deg, #E5E7EB 0.5px, transparent 0.5px, transparent 19.5px);
+             background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo: I² Consulting - Ahora como imagen -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center">
+                        <!-- Imagen del logo subida, con una altura de 40px (h-10) para el menú -->
+                        <img 
+                            src="Logo_invertido_PNG.png-bf503497-52a4-4e8c-84ca-5bec12648e5e" 
+                            alt="I² Consulting Logo" 
+                            class="h-10 w-auto"
+                        >
+                    </a>
+                </div>
+                <!-- Menú de Navegación (Desktop) -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#filosofia" class="text-gray-600 hover:text-i2-blue transition duration-150">Filosofía</a>
+                    <a href="#servicios" class="text-gray-600 hover:text-i2-blue transition duration-150">Nuestros Servicios</a>
+                    <a href="#antiobsolescencia" class="text-gray-600 hover:text-i2-blue transition duration-150">Arquitectura</a>
+                    <a href="#contacto" class="bg-i2-blue text-white px-4 py-2 rounded-lg shadow-md shadow-blue-300 hover:shadow-lg transition duration-300">Contacto Estratégico</a>
+                </nav>
+                <!-- Botón de Menú Móvil (Solo el icono) -->
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none p-2 rounded-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section: Propuesta de Valor Única (UVP) -->
+        <section class="relative pt-16 pb-24 lg:pt-32 lg:pb-40 overflow-hidden data-grid-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Título Principal: Inteligencia & Innovación al Cuadrado -->
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-gray-900">
+                    Inteligencia & Innovación <span class="block text-i2-blue">al Cuadrado.</span>
+                </h1>
+                <!-- Subtítulo / UVP -->
+                <p class="mt-6 max-w-3xl mx-auto text-xl text-gray-600">
+                    Fusionamos la <b>IA Generativa</b> con el <b>Compliance Regulatorio</b> para transformar sus desafíos en una ventaja estratégica medible, garantizando un crecimiento exponencial y <b>Arquitectura Anti-Obsolescencia</b>.
+                </p>
+                <!-- CTA Principal -->
+                <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contacto" class="bg-i2-blue text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-blue-400/50 hover:shadow-blue-500/50 transition duration-300 transform hover:scale-105">
+                        Solicitar Análisis Estratégico Data-Driven
+                    </a>
+                    <a href="#servicios" class="bg-white text-gray-700 font-bold py-3 px-8 rounded-xl border-2 border-i2-blue hover:bg-blue-50 transition duration-300 transform hover:scale-105">
+                        Ver Pilares de Servicio
+                    </a>
+                </div>
+            </div>
+            <!-- Elemento Conceptual de Fondo (Data-Grid Sutil) - Ya implementado en style.data-grid-bg -->
+        </section>
+
+        <!-- Sección de Servicios Clave (Los 3 Pilares) -->
+        <section id="servicios" class="py-20 lg:py-32 bg-gray-50 border-t border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-6">Los <span class="text-i2-blue">3 Pilares</span> de la Ventaja Competitiva</h2>
+                <p class="max-w-xl mx-auto text-center text-gray-600 mb-16">
+                    Nuestras soluciones aseguran la convergencia crítica: Innovación Tecnológica, Rigor Regulatorio y Resiliencia Algorítmica.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-10">
+
+                    <!-- Pilar 1: IA Aplicada y Data-Driven (Inteligencia) -->
+                    <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-xl hover:shadow-blue-200/50 transition duration-300">
+                        <div class="text-i2-blue mb-4 w-10 h-10">
+                            <!-- SVG: Inteligencia Artificial / Data -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="8" x2="8" y1="21" y2="23"/><line x1="16" x2="16" y1="21" y2="23"/><line x1="21" x2="23" y1="16" y2="16"/><line x1="21" x2="23" y1="8" y2="8"/><line x1="16" x2="16" y1="1" y2="3"/><line x1="8" x2="8" y1="1" y2="3"/><line x1="1" x2="3" y1="8" y2="8"/><line x1="1" x2="3" y1="16" y2="16"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">1. Estrategia Data-Driven</h3>
+                        <p class="text-gray-600 mb-4 text-base">
+                            Uso intensivo de <b>Analítica Predictiva</b> y <b>LLMs</b>. Garantizamos una toma de decisiones <b>100% basada en métricas</b> (BI), impulsando la eficiencia operativa y el <b>AEO</b> (Answer Engine Optimization).
+                        </p>
+                        <span class="text-i2-blue text-xs font-semibold tracking-wider uppercase">Analítica Predictiva, BI, LLMs</span>
+                    </div>
+
+                    <!-- Pilar 2: MLOps y Arquitectura Anti-Obsolescencia (Innovación) -->
+                    <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-xl hover:shadow-blue-200/50 transition duration-300">
+                        <div class="text-i2-blue mb-4 w-10 h-10">
+                            <!-- SVG: Arquitectura / Resiliencia -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4 10h16"/><path d="M4 14h16"/><path d="M21 12H3"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">2. Anti-Obsolescencia</h3>
+                        <p class="text-gray-600 mb-4 text-base">
+                            Implementamos arquitectura <b>MLOps</b> con <b>Modularidad</b> y <b>CI/CD</b> automatizado. Diseñamos para la <b>resiliencia</b> a través de <b>Plataformas Cloud-Native</b>, anticipando la evolución tecnológica (<i>Scouting</i> continuo).
+                        </p>
+                        <span class="text-i2-blue text-xs font-semibold tracking-wider uppercase">MLOps, CI/CD, Cloud-Native, I+D Continuo</span>
+                    </div>
+
+                    <!-- Pilar 3: Compliance y Ética IA (Rigor Técnico) -->
+                    <div class="p-6 rounded-2xl bg-white border border-gray-200 shadow-xl hover:shadow-blue-200/50 transition duration-300">
+                        <div class="text-i2-blue mb-4 w-10 h-10">
+                            <!-- SVG: Escudo / Compliance / Certificación -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">3. Compliance Regulatorio</h3>
+                        <p class="text-gray-600 mb-4 text-base">
+                            Transformamos la regulación (<b>AI Act, GDPR</b>) en oportunidad. Auditoría de <b>Sesgo Algorítmico</b>, <b>Trazabilidad</b> y <b>Monitoreo de Compliance Continuo (MRR)</b> para obtener su <b>Certificado de Cumplimiento</b>.
+                        </p>
+                        <span class="text-i2-blue text-xs font-semibold tracking-wider uppercase">AI Act, GDPR, ISO 42001, MRR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Filosofía y Valores -->
+        <section id="filosofia" class="py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Contenido de Texto -->
+                    <div>
+                        <span class="text-sm font-semibold uppercase tracking-wider text-i2-blue">Liderazgo Intelectual</span>
+                        <h2 class="mt-2 text-4xl font-extrabold text-gray-900 leading-tight">
+                            Nuestros Valores: De la Intuición a la <span class="text-i2-blue">Certeza.</span>
+                        </h2>
+                        <p class="mt-4 text-gray-600 text-lg">
+                            I² Consulting se funda sobre principios innegociables que sustentan cada proyecto, garantizando que nuestra <b>Inteligencia</b> sea siempre de <b>Alto Valor</b> y nuestra <b>Innovación</b> sea <b>Ética</b>.
+                        </p>
+                        <ul class="mt-6 space-y-3 text-gray-700">
+                            <li class="flex items-start text-base">
+                                <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0 text-i2-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <div><b class="text-gray-900">Rigor Técnico:</b> Documentación, trazabilidad y adherencia estricta a protocolos MLOps.</div>
+                            </li>
+                            <li class="flex items-start text-base">
+                                <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0 text-i2-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10c0 1.657-3.582 3-8 3s-8-1.343-8-3V7m16 0L12 3v18"></path></svg>
+                                <div><b class="text-gray-900">Resiliencia Algorítmica:</b> Compromiso con la Anti-Obsolescencia y el I+D Continuo.</div>
+                            </li>
+                            <li class="flex items-start text-base">
+                                <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0 text-i2-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div><b class="text-gray-900">Integridad y Compliance:</b> Ética en IA, transparencia y certificación ISO/IEC 42001.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Ilustración Conceptual -->
+                    <div class="relative hidden lg:block">
+                        <div class="p-8 bg-gray-100 rounded-2xl border-2 border-i2-blue/50 shadow-2xl shadow-blue-200/50">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                                <span class="text-i2-blue mr-2">I</span><sup class="text-lg font-bold align-super">2</sup> | Matriz de Decisión Estratégica
+                            </h3>
+                            <div class="bg-white border border-gray-300 p-4 rounded-lg">
+                                <!-- Representación simple de la matriz de riesgos o un modelo de decisión -->
+                                <p class="text-sm font-semibold text-gray-700 mb-2">IF (Compliance OK AND Model Drift < 5%) THEN High ROI.</p>
+                                <div class="w-full h-2 bg-green-200 rounded-full">
+                                    <div class="h-full bg-i2-blue w-11/12 rounded-full" style="width: 92%;"></div>
+                                </div>
+                                <p class="mt-1 text-xs text-gray-500">Probabilidad de éxito proyectado: 92%</p>
+                            </div>
+                            <div class="mt-4 p-3 bg-gray-700/50 rounded-lg text-sm text-gray-900 text-center font-bold border-l-4 border-i2-blue">
+                                Sustituimos la intuición por el $Rigor Técnico$.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Arquitectura Anti-Obsolescencia -->
+        <section id="antiobsolescencia" class="py-20 lg:py-32 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-6">El Motor de <span class="text-i2-blue">I²</span></h2>
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mb-12">
+                    La Arquitectura Algorítmica Anti-Obsolescencia es nuestro mandato: garantizar que su inversión tecnológica no caduque.
+                </p>
+                <div class="grid md:grid-cols-4 gap-6 text-center">
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-i2-blue">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Modularidad</h3>
+                        <p class="text-sm text-gray-600">Componentes independientes para fácil actualización y escalabilidad sin impacto global.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-i2-blue">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">MLOps/DataOps</h3>
+                        <p class="text-sm text-gray-600">Gestión completa del ciclo de vida de datos y modelos, asegurando calidad y gobernanza.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-i2-blue">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">CI/CD Automatizado</h3>
+                        <p class="text-sm text-gray-600">Integración y Despliegue Continuo para reaccionar inmediatamente a nuevos modelos o regulaciones.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-i2-blue">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">I+D Continuo</h3>
+                        <p class="text-sm text-gray-600">Scouting tecnológico trimestral para capitalizar nuevas oportunidades (IA Multimodal).</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer / Contacto Estratégico -->
+    <footer id="contacto" class="py-16 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Frase CTA solicitada: Te estudiamos, te conocemos, te potenciamos. -->
+            <h2 class="text-3xl font-extrabold text-white mb-3">
+                <span class="text-i2-blue">Te estudiamos, te conocemos,</span> te potenciamos.
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                El futuro de la consultoría es Inteligencia + Innovación. Contáctenos hoy para transformar la regulación y la IA en su ventaja competitiva.
+            </p>
+            <a href="mailto:contacto@i2consulting.com" class="bg-i2-blue text-white font-bold py-3 px-10 rounded-xl shadow-lg shadow-blue-400/50 hover:shadow-blue-500/50 transition duration-300 transform hover:scale-105">
+                Iniciar el Diálogo Estratégico
+            </a>
+
+            <div class="mt-12 pt-8 border-t border-gray-700 text-sm text-gray-500">
+                <p>&copy; 2025 I² Consulting. Todos los derechos reservados. | Arquitectura Algorítmica Anti-Obsolescencia.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
