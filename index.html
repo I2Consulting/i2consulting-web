@@ -37,62 +37,30 @@
     <meta property="og:title" content="I² Consulting | IA, SEO y Compliance: Crecimiento al Cuadrado" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.i2consulting.com" />
-    <meta property="og:image" content="https://placehold.co/1200x630/002D62/FFFFFF?text=I2+Consulting" /> <!-- Placeholder para imagen social -->
+    <!-- Usamos una URL genérica como fallback para la imagen social, ya que las URLs de archivos subidos son largas -->
+    <meta property="og:image" content="https://placehold.co/1200x630/002D62/FFFFFF?text=I%C2%B2+Consulting" /> 
     <meta property="og:description" content="Fusionamos IA Generativa con Compliance para transformar la regulación en una ventaja estratégica medible." />
 
-    <!-- 
-    ======================================
-    AEO: SCHEMA MARKUP (JSON-LD) 
-    Define la organización y servicios para Answer Engines/IA.
-    ======================================
-    -->
+    <!-- AEO: SCHEMA MARKUP (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ConsultingBusiness",
       "name": "I² Consulting",
       "url": "https://www.i2consulting.com",
-      "logo": "I2Consulting-Logotipo.PNG-f78da586-cd8b-4e7c-a21d-565ea6e36ff8",
+      "logo": "I2Consulting-Logotipo.PNG-89372808-8486-4999-b1e7-778b1a205080",
       "description": "Especialistas en Arquitectura Algorítmica Anti-Obsolescencia, fusionando Inteligencia Artificial, SEO/AEO y Compliance Ético para un crecimiento medible y sostenible.",
       "knowsAbout": ["Inteligencia Artificial", "Answer Engine Optimization", "AI Act Compliance", "MLOps", "Estrategia Data-Driven"],
-      "areaServed": {
-        "@type": "ServiceArea",
-        "name": "Global (Europa / Latam)"
-      },
       "serviceType": [
         {
           "@type": "Service",
-          "name": "Auditoría de IA Ética y Compliance",
-          "description": "Servicio premium para el cumplimiento regulatorio (AI Act, GDPR) y mitigación de sesgos algorítmicos."
-        },
-        {
-          "@type": "Service",
-          "name": "Arquitectura Algorítmica Anti-Obsolescencia",
-          "description": "Diseño e implementación de sistemas de IA modulares y resilientes con MLOps y CI/CD."
-        },
-        {
-          "@type": "Service",
-          "name": "SEO / AEO Estratégico",
-          "description": "Optimización de la visibilidad digital enfocada en Answer Engine Optimization para resultados medibles."
+          "name": "Auditoría de IA Ética y Compliance"
         }
       ]
     }
     </script>
 
     <style>
-        /* Estilo para aplicar un filtro sutil a la imagen (Refuerza paleta Azul/Gris) */
-        .blue-duotone-filter {
-            /* Se ha ajustado el filtro para que el logo se vea bien sobre fondo blanco, dándole más contraste si fuera necesario. */
-            filter: grayscale(0%) brightness(1.05) contrast(1.1);
-            mix-blend-mode: normal;
-            opacity: 1;
-        }
-
-        /* Clase para el alto contraste del texto */
-        .high-contrast-text {
-            text-shadow: 0 0 1px rgba(0, 45, 98, 0.2);
-        }
-
         /* Estilo de Data-Grid Modular para las secciones de contenido técnico */
         .data-grid-item {
             border-left: 2px solid #002D62; /* Borde sutil y alto contraste para jerarquía */
@@ -106,13 +74,16 @@
 </head>
 <body class="bg-pure-white text-gray-800 font-sans antialiased">
 
-    <!-- CABECERA y NAVEGACIÓN -->
+    <!-- CABECERA y NAVEGACIÓN (Fondo Claro: Logo Principal) -->
     <header class="shadow-sm border-b border-neutral-grey sticky top-0 z-10 bg-pure-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <!-- Logo - Aplicación del Logotipo Principal -->
+            <!-- Logo PRINCIPAL (Fondo Claro) -->
             <a href="#" class="flex items-center space-x-2">
-                <!-- Se mantiene el logo como imagen, que incluye el nombre -->
-                <img id="logo-main" src="I2Consulting-Logotipo.PNG-f78da586-cd8b-4e7c-a21d-565ea6e36ff8" alt="Logo I² Consulting" class="h-8 w-auto">
+                <img id="logo-main" 
+                     src="I2Consulting-Logotipo.PNG-89372808-8486-4999-b1e7-778b1a205080" 
+                     alt="Logo I² Consulting" 
+                     class="h-8 w-auto"
+                >
             </a>
             
             <!-- Menú de Navegación (Desktop) -->
@@ -142,10 +113,10 @@
 
     <main>
         
-        <!-- SECCIÓN HERO: Liderazgo Intelectual y Título de Alto Impacto -->
+        <!-- SECCIÓN HERO: Título de Alto Impacto -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:py-32 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-i2-blue leading-tight high-contrast-text">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-i2-blue leading-tight">
                     <span class="text-tech-blue block text-3xl sm:text-4xl mb-2 font-light">Inteligencia & Innovación al Cuadrado</span>
                     IA, Visibilidad Digital y Rigor Técnico para el Crecimiento Exponencial.
                 </h1>
@@ -153,7 +124,6 @@
                     Fusionamos la <b>Inteligencia</b> estratégica con la <b>Innovación</b> de la IA Generativa, transformando el riesgo regulatorio en una ventaja competitiva medible.
                 </p>
                 
-                <!-- Frase de Garantía -->
                 <p class="mt-4 text-sm text-gray-500 max-w-lg">
                     IA a prueba de futuro y de leyes. Garantizamos un Retorno de Inversión medible y sostenible.
                 </p>
@@ -162,23 +132,23 @@
                     <a href="#servicios" class="px-6 py-3 bg-i2-blue text-pure-white font-bold rounded-lg hover:bg-tech-blue transition duration-300 shadow-xl shadow-i2-blue/30 w-full sm:w-auto text-center transform hover:scale-[1.02]">
                         Te estudiamos, te conocemos, te potenciamos
                     </a>
-                    <!-- BÚTTON MODIFICADO: De "Contacta a un Experto" a "Auditoría I² Consulting" -->
                     <a href="#contacto" class="px-6 py-3 border-2 border-i2-blue text-i2-blue font-semibold rounded-lg hover:bg-neutral-grey transition duration-300 w-full sm:w-auto text-center">
                         Auditoría I² Consulting
                     </a>
                 </div>
             </div>
             
-            <!-- Logo I² Consulting en el Bloque HERO -->
+            <!-- Logotipo I² Consulting en el Bloque HERO (Principal) -->
             <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center items-center">
-                <img src="I2Consulting-Logotipo.PNG-f78da586-cd8b-4e7c-a21d-565ea6e36ff8" 
-                     alt="Logotipo I² Consulting en grande" 
-                     class="rounded-xl shadow-2xl w-full max-w-md h-auto blue-duotone-filter object-contain"
+                <!-- LOGO FONDO BLANCO -->
+                <img src="I2Consulting-Logotipo.PNG-89372808-8486-4999-b1e7-778b1a205080" 
+                     alt="Logotipo I² Consulting IA" 
+                     class="rounded-xl shadow-2xl w-full max-w-md h-auto object-contain"
                 >
             </div>
         </section>
 
-        <!-- SECCIÓN 2: ARQUITECTURA ALGORÍTMICA ANTI-OBSOLESCENCIA (DATA-GRID) -->
+        <!-- SECCIÓN 2: ARQUITECTURA ALGORÍTMICA ANTI-OBSOLESCENCIA (Fondo Gris Claro) -->
         <section id="arquitectura" class="bg-neutral-grey py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-center text-i2-blue mb-4">Arquitectura Algorítmica Anti-Obsolescencia I² Consulting</h2>
@@ -211,7 +181,7 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 3: SERVICIOS Y PROPUESTA DE VALOR -->
+        <!-- SECCIÓN 3: SERVICIOS Y PROPUESTA DE VALOR (Fondo Blanco) -->
         <section id="servicios" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-i2-blue mb-12 md:mb-16">Servicios de Alto Valor I² Consulting</h2>
 
@@ -233,7 +203,7 @@
                     <p class="text-gray-700">Optimización de contenido generado por IA para garantizar originalidad, relevancia y <b>Answer Engine Optimization</b>, superando a la competencia.</p>
                 </div>
 
-                <!-- Tarjeta 3: Compliance y MRR (Texto actualizado) -->
+                <!-- Tarjeta 3: Compliance y MRR -->
                 <div id="compliance" class="bg-pure-white p-8 rounded-xl shadow-2xl border-t-4 border-tech-blue transform hover:scale-[1.02] transition duration-300">
                     <h3 class="text-2xl font-bold text-i2-blue mb-4 flex items-center">
                         <span class="text-tech-blue mr-3 text-4xl">⚖️</span> Auditoría de IA Ética
@@ -244,10 +214,10 @@
             </div>
         </section>
 
-        <!-- SECCIÓN CTA / LLAMADA A LA ACCIÓN (Alto Contraste B/N) -->
+        <!-- SECCIÓN CTA / LLAMADA A LA ACCIÓN (Fondo Azul Oscuro) -->
         <section class="bg-i2-blue py-16 md:py-20">
             <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-pure-white mb-6 high-contrast-text">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-pure-white mb-6">
                     ¿Preparado para el Crecimiento Exponencial?
                 </h2>
                 <p class="text-lg sm:text-xl text-neutral-grey mb-8 md:mb-10">
@@ -261,14 +231,17 @@
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER (Fondo Gris Oscuro/Negro: Logo Invertido) -->
     <footer id="contacto" class="bg-gray-900 text-neutral-grey py-10 md:py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8">
                 
                 <div class="col-span-2 md:col-span-1">
-                    <img src="Logo_invertido_PNG.png-bf503497-52a4-4e8c-84ca-5bec12648e5e" alt="Logo I² Consulting Invertido" class="h-8 w-auto mb-4">
-                    <p class="text-sm">Liderazgo en la convergencia de IA y visibilidad digital.</p>
+                    <!-- LOGO FONDO AZUL/OSCURO -->
+                    <img src="I2-Consulting-IA-Espana.png-8cb64196-5447-43f9-bb4f-363a2b1eb45e" 
+                         alt="Logo I² Consulting IA España (Invertido)" 
+                         class="h-8 w-auto mb-4"
+                    >
                 </div>
                 
                 <div>
@@ -336,3 +309,4 @@
     </script>
 </body>
 </html>
+
