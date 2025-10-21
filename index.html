@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
     <!-- Configuración de Fuentes y Colores Corporativos -->
     <script>
         tailwind.config = {
@@ -29,13 +31,71 @@
     ETIQUETAS SEO Y OPEN GRAPH (CRÍTICAS) 
     ======================================
     -->
-    <title>I² Consulting | IA, SEO y Compliance: Crecimiento al Cuadrado</title>
-    <meta name="description" content="I² Consulting: Especialistas en Arquitectura Algorítmica Anti-Obsolescencia, fusionando Inteligencia Artificial, SEO/AEO y Compliance Ético para un crecimiento medible y sostenible.">
+    <title>I² Consulting | IA, Visibilidad en Google y Crecimiento Duradero</title>
+    <!-- TEXTO SIMPLIFICADO -->
+    <meta name="description" content="Ayudamos a crecer su negocio con Inteligencia Artificial, mejorando su visibilidad en Google y asegurando que cumple todas las leyes. Resultados garantizados y duraderos.">
+    <meta name="keywords" content="IA, Inteligencia Artificial, SEO, Posicionamiento en Buscadores, Cumplimiento Legal, Ley de IA, Consultoría de Negocios, Crecimiento Medible, I2 Consulting">
     
     <!-- Open Graph Data (para redes sociales) -->
-    <meta property="og:image" content="https://placehold.co/1200x630/002D62/FFFFFF?text=I%C2%B2+Consulting" /> 
+    <meta property="og:title" content="I² Consulting | IA, Visibilidad en Google y Crecimiento Duradero" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.i2consulting.com" />
+    <meta property="og:image" content="https://placehold.co/1200x630/002D62/FFFFFF?text=I2+Consulting" /> <!-- Placeholder para imagen social -->
+    <meta property="og:description" content="Usamos la IA para darle una ventaja competitiva, convirtiendo las regulaciones en oportunidades de crecimiento." />
+
+    <!-- 
+    ======================================
+    AEO: SCHEMA MARKUP (JSON-LD) 
+    No se modifica ya que es un código interno para máquinas (Google).
+    ======================================
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ConsultingBusiness",
+      "name": "I² Consulting",
+      "url": "https://www.i2consulting.com",
+      "logo": "I2Consulting-Logotipo.PNG-f78da586-cd8b-4e7c-a21d-565ea6e36ff8",
+      "description": "Especialistas en Arquitectura Algorítmica Anti-Obsolescencia, fusionando Inteligencia Artificial, SEO/AEO y Compliance Ético para un crecimiento medible y sostenible.",
+      "knowsAbout": ["Inteligencia Artificial", "Answer Engine Optimization", "AI Act Compliance", "MLOps", "Estrategia Data-Driven"],
+      "areaServed": {
+        "@type": "ServiceArea",
+        "name": "Global (Europa / Latam)"
+      },
+      "serviceType": [
+        {
+          "@type": "Service",
+          "name": "Auditoría de IA Ética y Compliance",
+          "description": "Servicio premium para el cumplimiento regulatorio (AI Act, GDPR) y mitigación de sesgos algorítmicos."
+        },
+        {
+          "@type": "Service",
+          "name": "Arquitectura Algorítmica Anti-Obsolescencia",
+          "description": "Diseño e implementación de sistemas de IA modulares y resilientes con MLOps y CI/CD."
+        },
+        {
+          "@type": "Service",
+          "name": "SEO / AEO Estratégico",
+          "description": "Optimización de la visibilidad digital enfocada en Answer Engine Optimization para resultados medibles."
+        }
+      ]
+    }
+    </script>
 
     <style>
+        /* Estilo para aplicar un filtro sutil a la imagen (Refuerza paleta Azul/Gris) */
+        .blue-duotone-filter {
+            /* Se ha ajustado el filtro para que el logo se vea bien sobre fondo blanco, dándole más contraste si fuera necesario. */
+            filter: grayscale(0%) brightness(1.05) contrast(1.1);
+            mix-blend-mode: normal;
+            opacity: 1;
+        }
+
+        /* Clase para el alto contraste del texto */
+        .high-contrast-text {
+            text-shadow: 0 0 1px rgba(0, 45, 98, 0.2);
+        }
+
         /* Estilo de Data-Grid Modular para las secciones de contenido técnico */
         .data-grid-item {
             border-left: 2px solid #002D62; /* Borde sutil y alto contraste para jerarquía */
@@ -49,24 +109,21 @@
 </head>
 <body class="bg-pure-white text-gray-800 font-sans antialiased">
 
-    <!-- CABECERA y NAVEGACIÓN (Fondo Claro: Logo Principal) -->
+    <!-- CABECERA y NAVEGACIÓN -->
     <header class="shadow-sm border-b border-neutral-grey sticky top-0 z-10 bg-pure-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <!-- Logo PRINCIPAL (Fondo Claro: I2Consulting-Logotipo.PNG) -->
+            <!-- Logo - Aplicación del Logotipo Principal -->
             <a href="#" class="flex items-center space-x-2">
-                <img id="logo-main" 
-                     src="I2Consulting-Logotipo.PNG" 
-                     alt="Logo I² Consulting" 
-                     class="h-8 w-auto"
-                     onerror="this.onerror=null; this.src='https://placehold.co/150x32/E0E0E0/002D62?text=Logo+I2';"
-                >
+                <!-- Se mantiene el logo como imagen, que incluye el nombre -->
+                <img id="logo-main" src="I2Consulting-Logotipo.PNG-f78da586-cd8b-4e7c-a21d-565ea6e36ff8" alt="Logo I² Consulting" class="h-8 w-auto">
             </a>
             
             <!-- Menú de Navegación (Desktop) -->
             <nav id="desktop-menu" class="hidden md:flex space-x-8 text-i2-blue font-semibold">
-                <a href="#servicios" class="hover:text-tech-blue transition duration-200">Servicios</a>
-                <a href="#arquitectura" class="hover:text-tech-blue transition duration-200">Arquitectura I² Consulting</a>
-                <a href="#compliance" class="hover:text-tech-blue transition duration-200">Compliance IA</a>
+                <a href="#servicios" class="hover:text-tech-blue transition duration-200">Nuestros Servicios</a>
+                <a href="#arquitectura" class="hover:text-tech-blue transition duration-200">Nuestra Metodología</a>
+                <a href="#filosofia" class="hover:text-tech-blue transition duration-200">Nuestra Filosofía</a> 
+                <a href="#compliance" class="hover:text-tech-blue transition duration-200">Seguridad Legal (AI Act)</a>
                 <a href="#contacto" class="px-4 py-2 bg-i2-blue text-pure-white rounded-lg hover:bg-tech-blue transition duration-200 shadow-md">Contacto</a>
             </nav>
 
@@ -79,9 +136,10 @@
         <!-- Menú Móvil Desplegable -->
         <nav id="mobile-menu" class="hidden md:hidden bg-pure-white border-t border-neutral-grey p-4">
             <div class="flex flex-col space-y-3 text-i2-blue font-semibold">
-                <a href="#servicios" class="hover:text-tech-blue transition duration-200 block p-2 rounded-lg" onclick="closeMobileMenu()">Servicios</a>
-                <a href="#arquitectura" class="hover:text-tech-blue transition duration-200 block p-2 rounded-lg" onclick="closeMobileMenu()">Arquitectura I² Consulting</a>
-                <a href="#compliance" class="hover:text-tech-blue transition duration-200 block p-2 rounded-lg" onclick="closeMobileMenu()">Compliance IA</a>
+                <a href="#servicios" class="hover:text-tech-blue transition duration-200 block p-2 rounded-lg" onclick="closeMobileMenu()">Nuestros Servicios</a>
+                <a href="#arquitectura" class="hover:text-tech-blue transition duration-200 block p-2 rounded-lg" onclick="closeMobileMenu()">Nuestra Metodología</a>
+                <a href="#filosofia" class="hover:text-tech-blue transition duration-200 block p-2 rounded-lg" onclick="closeMobileMenu()">Nuestra Filosofía</a> 
+                <a href="#compliance" class="hover:text-tech-blue transition duration-200 block p-2 rounded-lg" onclick="closeMobileMenu()">Seguridad Legal (AI Act)</a>
                 <a href="#contacto" class="block p-2 text-i2-blue border border-i2-blue rounded-lg hover:bg-i2-blue hover:text-pure-white transition duration-200" onclick="closeMobileMenu()">Contacto</a>
             </div>
         </nav>
@@ -89,48 +147,79 @@
 
     <main>
         
-        <!-- SECCIÓN HERO: Título de Alto Impacto -->
+        <!-- SECCIÓN HERO: Liderazgo Intelectual y Título de Alto Impacto (SIMPLIFICADO) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:py-32 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-i2-blue leading-tight">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-i2-blue leading-tight high-contrast-text">
                     <span class="text-tech-blue block text-3xl sm:text-4xl mb-2 font-light">Inteligencia & Innovación al Cuadrado</span>
-                    IA, Visibilidad Digital y Rigor Técnico para el Crecimiento Exponencial.
+                    Inteligencia Artificial, Resultados Reales y Crecimiento Sostenible para su Negocio.
                 </h1>
                 <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-lg">
-                    Fusionamos la <b>Inteligencia</b> estratégica con la <b>Innovación</b> de la IA Generativa, transformando el riesgo regulatorio en una ventaja competitiva medible.
+                    Usamos la **Inteligencia** artificial más avanzada para darle **Innovación** y convertir las nuevas leyes en una oportunidad para que su negocio crezca con seguridad.
                 </p>
                 
+                <!-- Frase de Garantía -->
                 <p class="mt-4 text-sm text-gray-500 max-w-lg">
-                    IA a prueba de futuro y de leyes. Garantizamos un Retorno de Inversión medible y sostenible.
+                    IA a prueba de futuro y de leyes. Garantizamos un Retorno de Inversión (ROI) claro y duradero.
                 </p>
 
                 <div class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#servicios" class="px-6 py-3 bg-i2-blue text-pure-white font-bold rounded-lg hover:bg-tech-blue transition duration-300 shadow-xl shadow-i2-blue/30 w-full sm:w-auto text-center transform hover:scale-[1.02]">
                         Te estudiamos, te conocemos, te potenciamos
                     </a>
+                    <!-- BÚTTON MODIFICADO: De "Contacta a un Experto" a "Auditoría I² Consulting" -->
                     <a href="#contacto" class="px-6 py-3 border-2 border-i2-blue text-i2-blue font-semibold rounded-lg hover:bg-neutral-grey transition duration-300 w-full sm:w-auto text-center">
-                        Auditoría I² Consulting
+                        Auditoría de Crecimiento
                     </a>
                 </div>
             </div>
             
-            <!-- Logotipo I² Consulting en el Bloque HERO (Principal) -->
+            <!-- Logo I² Consulting en el Bloque HERO -->
             <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center items-center">
-                <!-- LOGO FONDO BLANCO: I2Consulting-Logotipo.PNG -->
-                <img src="I2Consulting-Logotipo.PNG" 
-                     alt="Logotipo I² Consulting IA" 
-                     class="rounded-xl shadow-2xl w-full max-w-md h-auto object-contain"
-                     onerror="this.onerror=null; this.src='https://placehold.co/400x100/E0E0E0/002D62?text=LOGO+ERROR';"
+                <img src="I2Consulting-Logotipo.PNG-f78da586-cd8b-4e7c-a21d-565ea6e36ff8" 
+                     alt="Logotipo I² Consulting en grande" 
+                     class="rounded-xl shadow-2xl w-full max-w-md h-auto blue-duotone-filter object-contain"
                 >
             </div>
         </section>
 
-        <!-- SECCIÓN 2: ARQUITECTURA ALGORÍTMICA ANTI-OBSOLESCENCIA (Fondo Gris Claro) -->
+        <!-- SECCIÓN DE NUEVA FILOSOFÍA I² (SIMPLIFICADO) -->
+        <section id="filosofia" class="bg-i2-blue py-16 md:py-20 text-pure-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-tech-blue mb-10">
+                    Nuestra Filosofía: Resultados Claros, Crecimiento Duradero y Ética
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    
+                    <div class="p-6 border-2 border-tech-blue rounded-lg shadow-lg">
+                        <span class="text-5xl block mb-3">📈</span>
+                        <h3 class="text-xl font-semibold mb-2">Resultados Claros y Medibles</h3>
+                        <p class="text-neutral-grey text-sm">Todo lo que hacemos se mide con números. Nos enfocamos en el Retorno de Inversión (ROI) y en su ganancia mensual real.</p>
+                    </div>
+
+                    <div class="p-6 border-2 border-tech-blue rounded-lg shadow-lg">
+                        <span class="text-5xl block mb-3">🔄</span>
+                        <h3 class="text-xl font-semibold mb-2">Crecimiento a Prueba de Cambios</h3>
+                        <p class="text-neutral-grey text-sm">Diseñamos sus sistemas para que se adapten a la evolución de los algoritmos y la tecnología sin tener que empezar de cero cada año.</p>
+                    </div>
+
+                    <div class="p-6 border-2 border-tech-blue rounded-lg shadow-lg">
+                        <span class="text-5xl block mb-3">🛡️</span>
+                        <h3 class="text-xl font-semibold mb-2">Tranquilidad Legal y Ética</h3>
+                        <p class="text-neutral-grey text-sm">Usar la IA de forma ética y legal no es un problema, es nuestra base. Garantizamos el cumplimiento de leyes (como la AI Act) para generar confianza.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- FIN SECCIÓN FILOSOFÍA I² -->
+
+        <!-- SECCIÓN 2: ARQUITECTURA ALGORÍTMICA ANTI-OBSOLESCENCIA (SIMPLIFICADO) -->
         <section id="arquitectura" class="bg-neutral-grey py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl font-bold text-center text-i2-blue mb-4">Arquitectura Algorítmica Anti-Obsolescencia I² Consulting</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-i2-blue mb-4">La Fórmula I² para un Crecimiento Sólido y Duradero</h2>
                 <p class="text-center text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-10 md:mb-12">
-                    Nuestras soluciones están diseñadas con <b>Modularidad</b> y <b>MLOps</b> para garantizar la resiliencia algorítmica y la actualización continua ante la evolución tecnológica y regulatoria.
+                    Nuestras soluciones están diseñadas para ser modulares y flexibles, garantizando que su inversión tecnológica siempre esté actualizada y preparada para el futuro.
                 </p>
 
                 <!-- Grid de Principios (Reflejando Data-Grid con Bordes Sutiles) -->
@@ -138,67 +227,67 @@
                     
                     <div class="data-grid-item bg-pure-white p-6 rounded-lg shadow-lg">
                         <span class="text-tech-blue text-3xl font-bold block mb-2">01.</span>
-                        <h3 class="text-xl font-semibold text-i2-blue mb-3">MLOps y CI/CD</h3>
-                        <p class="text-gray-600">Automatización de pruebas y despliegues para reaccionar inmediatamente a los cambios del mercado y <b>Model Drift</b>.</p>
+                        <h3 class="text-xl font-semibold text-i2-blue mb-3">Sistemas Automáticos y Flexibles</h3>
+                        <p class="text-gray-600">Hacemos que sus herramientas se actualicen solas y se adapten a cualquier cambio de Google o del mercado, **sin fallos inesperados**.</p>
                     </div>
 
                     <div class="data-grid-item bg-pure-white p-6 rounded-lg shadow-lg">
                         <span class="text-tech-blue text-3xl font-bold block mb-2">02.</span>
-                        <h3 class="text-xl font-semibold text-i2-blue mb-3">Modularidad Cloud-Native</h3>
-                        <p class="text-gray-600">Cada componente es independiente, escalable y se apoya en plataformas de nube gestionadas (AWS/Google Cloud).</p>
+                        <h3 class="text-xl font-semibold text-i2-blue mb-3">Fácil de Escalar sin Límites</h3>
+                        <p class="text-gray-600">Diseñamos su tecnología por piezas independientes, para que pueda crecer sin problemas y aprovechar toda la potencia de la nube (como Google Cloud o Amazon).</p>
                     </div>
 
                     <div class="data-grid-item bg-pure-white p-6 rounded-lg shadow-lg">
                         <span class="text-tech-blue text-3xl font-bold block mb-2">03.</span>
-                        <h3 class="text-xl font-semibold text-i2-blue mb-3">I+D Continuo</h3>
-                        <p class="text-gray-600">Proceso formalizado de <b>Scouting</b> Tecnológico para asegurar que el cliente siempre esté a la vanguardia (Garantía I² Consulting).</p>
+                        <h3 class="text-xl font-semibold text-i2-blue mb-3">Siempre a la Vanguardia</h3>
+                        <p class="text-gray-600">Tenemos un proceso formal de investigación continua para asegurar que usted siempre use lo último en tecnología antes que su competencia. **Garantía I²**.</p>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 3: SERVICIOS Y PROPUESTA DE VALOR (Fondo Blanco) -->
+        <!-- SECCIÓN 3: SERVICIOS Y PROPUESTA DE VALOR (SIMPLIFICADO) -->
         <section id="servicios" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-i2-blue mb-12 md:mb-16">Servicios de Alto Valor I² Consulting</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-i2-blue mb-12 md:mb-16">Lo que Hacemos por Su Negocio</h2>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                 
                 <!-- Tarjeta 1: IA Aplicada y Generativa -->
                 <div class="bg-pure-white p-8 rounded-xl shadow-2xl border-t-4 border-tech-blue transform hover:scale-[1.02] transition duration-300">
                     <h3 class="text-2xl font-bold text-i2-blue mb-4 flex items-center">
-                        <span class="text-tech-blue mr-3 text-4xl">💡</span> IA Aplicada & Data-Driven
+                        <span class="text-tech-blue mr-3 text-4xl">💡</span> IA para Ganar Dinero
                     </h3>
-                    <p class="text-gray-700">Implementación de herramientas de IA propietarias para la <b>Analítica Predictiva</b> (LTV, Retención) y la toma de decisiones 100% basada en métricas.</p>
+                    <p class="text-gray-700">Usamos la Inteligencia Artificial para saber qué clientes le darán más beneficios a largo plazo y cómo hacer que se queden con usted (predicción de retención y valor).</p>
                 </div>
 
                 <!-- Tarjeta 2: SEO/AEO y Visibilidad -->
                 <div class="bg-pure-white p-8 rounded-xl shadow-2xl border-t-4 border-i2-blue transform hover:scale-[1.02] transition duration-300">
                     <h3 class="text-2xl font-bold text-i2-blue mb-4 flex items-center">
-                        <span class="text-i2-blue mr-3 text-4xl">🔎</span> SEO / AEO Estratégico
+                        <span class="text-i2-blue mr-3 text-4xl">🔎</span> Que Google le Ame
                     </h3>
-                    <p class="text-gray-700">Optimización de contenido generado por IA para garantizar originalidad, relevancia y <b>Answer Engine Optimization</b>, superando a la competencia.</p>
+                    <p class="text-gray-700">Optimizamos su web para que no solo aparezca en las búsquedas, sino que Google (o la IA) use su información como **la respuesta correcta** que busca la gente.</p>
                 </div>
 
-                <!-- Tarjeta 3: Compliance y MRR -->
+                <!-- Tarjeta 3: Compliance y MRR (SIMPLIFICADO) -->
                 <div id="compliance" class="bg-pure-white p-8 rounded-xl shadow-2xl border-t-4 border-tech-blue transform hover:scale-[1.02] transition duration-300">
                     <h3 class="text-2xl font-bold text-i2-blue mb-4 flex items-center">
-                        <span class="text-tech-blue mr-3 text-4xl">⚖️</span> Auditoría de IA Ética
+                        <span class="text-tech-blue mr-3 text-4xl">⚖️</span> Tranquilidad Legal y Crecimiento
                     </h3>
-                    <p class="text-gray-700">Transformamos la amenaza regulatoria (AI Act, GDPR) en una línea de negocio premium y <b>MRR estable</b>.</p>
+                    <p class="text-gray-700">Le aseguramos que sus sistemas de IA cumplen con la ley (como la nueva Ley de IA Europea), transformando el riesgo legal en **confianza y más ingresos estables**.</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- SECCIÓN CTA / LLAMADA A LA ACCIÓN (Fondo Azul Oscuro) -->
+        <!-- SECCIÓN CTA / LLAMADA A LA ACCIÓN (SIMPLIFICADO) -->
         <section class="bg-i2-blue py-16 md:py-20">
             <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-pure-white mb-6">
-                    ¿Preparado para el Crecimiento Exponencial?
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-pure-white mb-6 high-contrast-text">
+                    ¿Listo para que su Negocio Crezca sin Frenos?
                 </h2>
                 <p class="text-lg sm:text-xl text-neutral-grey mb-8 md:mb-10">
-                    Deje de reaccionar al mercado. Comience a liderarlo con una <b>Arquitectura Algorítmica</b> diseñada para la Anti-Obsolescencia I² Consulting.
+                    Deje de reaccionar al mercado. Comience a liderarlo con una **Estrategia Inteligente** diseñada para el éxito duradero con I² Consulting.
                 </p>
                 <a href="#contacto" class="px-8 sm:px-10 py-3 sm:py-4 bg-tech-blue text-pure-white font-black rounded-full text-md sm:text-lg uppercase tracking-wider hover:bg-white hover:text-tech-blue transition duration-300 shadow-2xl shadow-tech-blue/50">
                     Solicitar Auditoría Estratégica
@@ -208,27 +297,23 @@
 
     </main>
 
-    <!-- FOOTER (Fondo Gris Oscuro/Negro: Logo Invertido) -->
+    <!-- FOOTER (AJUSTADO) -->
     <footer id="contacto" class="bg-gray-900 text-neutral-grey py-10 md:py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8">
                 
                 <div class="col-span-2 md:col-span-1">
-                    <!-- LOGO FONDO AZUL/OSCURO: I2-Consulting-IA-Espana.png -->
-                    <img src="#" 
-                         alt="Logo I² Consulting IA España (Invertido)" 
-                         class="h-8 w-auto mb-4"
-                         onerror="this.onerror=null; this.src='https://placehold.co/150x32/002D62/FFFFFF?text=Logo+Invertido';"
-                    >
+                    <img src="Logo_invertido_PNG.png-bf503497-52a4-4e8c-84ca-5bec12648e5e" alt="Logo I² Consulting Invertido" class="h-8 w-auto mb-4">
+                    <p class="text-sm">Liderazgo en la unión de Inteligencia Artificial y visibilidad online.</p>
                 </div>
                 
                 <div>
                     <h4 class="text-white font-semibold mb-4">Servicios Clave</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#servicios" class="hover:text-tech-blue transition">IA Aplicada & Predictiva</a></li>
-                        <li><a href="#servicios" class="hover:text-tech-blue transition">AEO & Posicionamiento</a></li>
-                        <li><a href="#compliance" class="hover:text-tech-blue transition">Compliance AI Act</a></li>
-                        <li><a href="#arquitectura" class="hover:text-tech-blue transition">MLOps & Anti-Obsolescencia</a></li>
+                        <li><a href="#servicios" class="hover:text-tech-blue transition">IA para Predicción de Negocio</a></li>
+                        <li><a href="#servicios" class="hover:text-tech-blue transition">Posicionamiento Web Estratégico</a></li>
+                        <li><a href="#compliance" class="hover:text-tech-blue transition">Cumplimiento de la Ley de IA</a></li>
+                        <li><a href="#arquitectura" class="hover:text-tech-blue transition">Sistemas a Prueba de Obsolescencia</a></li>
                     </ul>
                 </div>
                 
@@ -242,18 +327,18 @@
 
                 <div>
                     <h4 class="text-white font-semibold mb-4">Filosofía</h4>
-                    <p class="text-sm">Cada decisión es <b>Data-Driven</b>. Nuestro objetivo es su <b>MRR estable</b> y una ventaja estratégica Anti-Obsolescencia.</p>
+                    <p class="text-sm">Todo se basa en **datos** y **resultados medibles**. Le ayudamos a tener ingresos estables y una ventaja duradera.</p>
                 </div>
 
             </div>
             
             <div class="text-center text-xs text-gray-500">
-                &copy; 2025 I² Consulting. Todos los derechos reservados. | Implementación de Arquitectura Algorítmica.
+                &copy; 2025 I² Consulting. Todos los derechos reservados. | Estrategia de Crecimiento Basada en IA.
             </div>
         </div>
     </footer>
 
-    <!-- Script para el Menú Móvil -->
+    <!-- Script para el Menú Móvil (sin cambios) -->
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -287,4 +372,3 @@
     </script>
 </body>
 </html>
-
